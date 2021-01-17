@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+*, *::before, *::after {
+margin: 0;
+padding: 0;
+}
+a, a:hover {
+text-decoration: none;
+color: inherit;
+}
+ul, li {
+list-style: none;
+}
+
+.score-board {
+  transform: translate(200px, 50px);
+}
+
+h3 {
+  font-size: 2em;
+}
+
+
+
+.grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 560px;
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  /* border-radius: 25%; */
+  clip-path: ellipse(48% 32% at 50% 50%); 
+}
